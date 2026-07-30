@@ -2,700 +2,502 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Smart AI Study Planner</title>
+<meta charset="UTF-8">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <link rel="stylesheet" href="./css/style.css">
+<title>Smart AI Study Planner | AI Powered Student Learning Platform</title>
+
+
+<meta name="description"
+content="Smart AI Study Planner helps students create smart study schedules, track progress and improve learning with AI.">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
 </head>
+
 
 <body>
 
-<div class="container">
 
-    <!-- ================= Sidebar ================= -->
+<!-- NAVBAR -->
 
-    <aside class="sidebar">
+<header class="navbar">
 
-        <div class="logo">
 
-            <div class="logo-icon">
-                <i class="fa-solid fa-brain"></i>
-            </div>
+<div class="brand">
 
-            <div>
-                <h2>SMART AI</h2>
-                <span>Study Planner</span>
-            </div>
 
-        </div>
+<div class="logo-icon">
 
-        <ul class="menu">
-
-            <li class="active">
-                <a href="#">
-                    <i class="fa-solid fa-house"></i>
-                    Dashboard
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-regular fa-calendar-check"></i>
-                    Planner
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-book"></i>
-                    Notes
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    Calendar
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-clock"></i>
-                    Pomodoro
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    Progress
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-robot"></i>
-                    AI Assistant
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-gear"></i>
-                    Settings
-                </a>
-            </li>
-
-        </ul>
-
-        <div class="dark-mode">
-
-            <div>
-                <i class="fa-solid fa-moon"></i>
-                Dark Mode
-            </div>
-
-            <label class="switch">
-                <input type="checkbox" checked>
-                <span class="slider"></span>
-            </label>
-
-        </div>
-
-        <div class="sidebar-card">
-
-            <img src="images/study.png" alt="Study">
-
-            <p>
-                Small steps every day lead to big results.
-            </p>
-
-        </div>
-
-    </aside>
-
-    <!-- ================= Main Content ================= -->
-
-    <main class="main">
-
-        <!-- Navbar -->
-
-        <header class="topbar">
-
-            <div class="search-box">
-
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-                <input type="text"
-                    placeholder="Search for anything...">
-
-            </div>
-
-            <div class="top-right">
-
-                <i class="fa-regular fa-bell"></i>
-
-                <i class="fa-regular fa-calendar"></i>
-
-                <div class="profile">
-
-                    <img src="images/avatar.png" alt="">
-
-                    <span>Prajkta</span>
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </div>
-
-            </div>
-
-        </header>
-
-        <!-- Greeting -->
-
-        <section class="hero">
-
-            <div>
-
-                <h1>
-                    Good Morning,
-                    <span>Prajkta!</span>
-                    👋
-                </h1>
-
-                <p>
-                    Let's make today productive and amazing!
-                </p>
-
-            </div>
-
-            <div class="streak-banner">
-
-                <div class="fire">
-
-                    🔥
-
-                </div>
-
-                <div>
-
-                    <h2>28 Days</h2>
-
-                    <span>Study Streak</span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Stats Cards -->
-
-        <section class="cards">
-
-            <div class="card blue">
-
-                <div class="icon">
-                    📘
-                </div>
-
-                <div>
-
-                    <h4>Study Hours</h4>
-
-                    <h2>5.2 hrs</h2>
-
-                    <p>↑ 18% from yesterday</p>
-
-                </div>
-
-            </div>
-
-            <div class="card green">
-
-                <div class="icon">
-                    ✅
-                </div>
-
-                <div>
-
-                    <h4>Tasks Completed</h4>
-
-                    <h2>12 Tasks</h2>
-
-                    <p>↑ 20% from yesterday</p>
-
-                </div>
-
-            </div>
-
-            <div class="card purple">
-
-                <div class="icon">
-                    🧠
-                </div>
-
-                <div>
-
-                    <h4>Focus Score</h4>
-
-                    <h2>92%</h2>
-
-                    <p>↑ 15% from yesterday</p>
-
-                </div>
-
-            </div>
-
-            <div class="card orange">
-
-                <div class="icon">
-                    🔥
-                </div>
-
-                <div>
-
-                    <h4>Study Streak</h4>
-
-                    <h2>28 Days</h2>
-
-                    <p>Amazing! Keep it up 🔥</p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-                <!-- ================= Main Dashboard ================= -->
-
-        <section class="dashboard-grid">
-
-            <!-- ================= Left Section ================= -->
-
-            <div class="left-section">
-
-                <!-- Today's Plan -->
-
-                <div class="panel">
-
-                    <div class="panel-header">
-
-                        <h3>
-                            <i class="fa-regular fa-calendar-check"></i>
-                            Today's Plan
-                        </h3>
-
-                        <span>30 July, 2025</span>
-
-                    </div>
-
-                    <div class="plan-grid">
-
-                        <!-- Morning -->
-
-                        <div class="plan-card morning">
-
-                            <h4>☀ Morning</h4>
-
-                            <label>
-                                <input type="checkbox" checked>
-                                HTML Basics
-                            </label>
-
-                            <label>
-                                <input type="checkbox" checked>
-                                CSS Styling
-                            </label>
-
-                            <label>
-                                <input type="checkbox">
-                                JavaScript Intro
-                            </label>
-
-                            <button>+ Add Task</button>
-
-                        </div>
-
-                        <!-- Afternoon -->
-
-                        <div class="plan-card afternoon">
-
-                            <h4>🌞 Afternoon</h4>
-
-                            <label>
-                                <input type="checkbox">
-                                React Basics
-                            </label>
-
-                            <label>
-                                <input type="checkbox">
-                                Component Practice
-                            </label>
-
-                            <label>
-                                <input type="checkbox">
-                                Firebase Setup
-                            </label>
-
-                            <button>+ Add Task</button>
-
-                        </div>
-
-                        <!-- Night -->
-
-                        <div class="plan-card night">
-
-                            <h4>🌙 Night</h4>
-
-                            <label>
-                                <input type="checkbox">
-                                Revise Topics
-                            </label>
-
-                            <label>
-                                <input type="checkbox">
-                                Make Notes
-                            </label>
-
-                            <label>
-                                <input type="checkbox">
-                                Read Documentation
-                            </label>
-
-                            <button>+ Add Task</button>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Calendar -->
-
-                <div class="panel calendar-panel">
-
-                    <div class="panel-header">
-
-                        <h3>
-                            <i class="fa-regular fa-calendar"></i>
-                            Calendar
-                        </h3>
-
-                        <span>July 2025</span>
-
-                    </div>
-
-                    <table class="calendar">
-
-                        <thead>
-
-                            <tr>
-                                <th>Sun</th>
-                                <th>Mon</th>
-                                <th>Tue</th>
-                                <th>Wed</th>
-                                <th>Thu</th>
-                                <th>Fri</th>
-                                <th>Sat</th>
-                            </tr>
-
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                            </tr>
-
-                            <tr>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <td>12</td>
-                            </tr>
-
-                            <tr>
-                                <td>13</td>
-                                <td>14</td>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
-                                <td>18</td>
-                                <td>19</td>
-                            </tr>
-
-                            <tr>
-                                <td>20</td>
-                                <td>21</td>
-                                <td>22</td>
-                                <td>23</td>
-                                <td>24</td>
-                                <td>25</td>
-                                <td>26</td>
-                            </tr>
-
-                            <tr>
-                                <td>27</td>
-                                <td>28</td>
-                                <td>29</td>
-
-                                <td class="active-day">
-                                    30
-                                </td>
-
-                                <td>31</td>
-
-                                <td></td>
-
-                                <td></td>
-
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
-
-                <!-- Progress -->
-
-                <div class="panel">
-
-                    <div class="panel-header">
-
-                        <h3>
-                            <i class="fa-solid fa-chart-line"></i>
-                            Progress Overview
-                        </h3>
-
-                        <select>
-
-                            <option>This Week</option>
-
-                            <option>This Month</option>
-
-                        </select>
-
-                    </div>
-
-                    <canvas id="progressChart"></canvas>
-
-                </div>
-
-            </div>
-
-            <!-- ================= Right Section ================= -->
-
-            <div class="right-section">
-
-                <!-- Quick Notes -->
-
-                <div class="panel">
-
-                    <div class="panel-header">
-
-                        <h3>
-                            <i class="fa-solid fa-note-sticky"></i>
-                            Quick Notes
-                        </h3>
-
-                        <i class="fa-solid fa-plus"></i>
-
-                    </div>
-
-                    <div class="note yellow">
-                        Learn Flexbox in CSS
-                    </div>
-
-                    <div class="note blue">
-                        Finish React Project
-                    </div>
-
-                    <div class="note green">
-                        Firebase Authentication
-                    </div>
-
-                    <div class="note pink">
-                        Read JavaScript Docs
-                    </div>
-
-                </div>
-
-                            <!-- ================= Pomodoro Timer ================= -->
-
-                <div class="panel timer-panel">
-
-                    <div class="panel-header">
-
-                        <h3>
-                            <i class="fa-solid fa-clock"></i>
-                            Pomodoro Timer
-                        </h3>
-
-                        <i class="fa-solid fa-ellipsis"></i>
-
-                    </div>
-
-                    <div class="timer-tabs">
-
-                        <button class="active">Focus</button>
-                        <button>Break</button>
-
-                    </div>
-
-                    <div class="timer-circle">
-
-                        <div class="circle">
-
-                            <h1 id="timer">25:00</h1>
-
-                            <p>Focus Time 🍅</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="timer-buttons">
-
-                        <button id="startBtn">
-                            <i class="fa-solid fa-play"></i>
-                        </button>
-
-                        <button id="resetBtn">
-                            <i class="fa-solid fa-rotate-right"></i>
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- ================= AI Suggestion ================= -->
-
-                <div class="panel ai-card">
-
-                    <div class="panel-header">
-
-                        <h3>
-                            <i class="fa-solid fa-robot"></i>
-                            AI Study Suggestion
-                        </h3>
-
-                    </div>
-
-                    <div class="robot">
-
-                        🤖
-
-                    </div>
-
-                    <h2>JavaScript</h2>
-
-                    <p>
-
-                        Today you should focus on JavaScript because
-                        you completed HTML yesterday.
-
-                    </p>
-
-                    <button>
-
-                        Why this suggestion?
-
-                    </button>
-
-                </div>
-
-                <!-- ================= Achievements ================= -->
-
-                <div class="panel">
-
-                    <div class="panel-header">
-
-                        <h3>
-
-                            🏆 Achievements
-
-                        </h3>
-
-                        <a href="#">View All</a>
-
-                    </div>
-
-                    <div class="achievement-grid">
-
-                        <div class="achievement">
-
-                            ⭐
-
-                            <h4>First Steps</h4>
-
-                            <p>Complete your first task</p>
-
-                        </div>
-
-                        <div class="achievement">
-
-                            🔥
-
-                            <h4>7 Day Streak</h4>
-
-                            <p>Study 7 days in a row</p>
-
-                        </div>
-
-                        <div class="achievement">
-
-                            💎
-
-                            <h4>30 Day Streak</h4>
-
-                            <p>Study 30 days in a row</p>
-
-                        </div>
-
-                        <div class="achievement">
-
-                            📚
-
-                            <h4>Note Master</h4>
-
-                            <p>Create 100 Notes</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
+<i class="fa-solid fa-brain"></i>
 
 </div>
 
+
+<div>
+
+<h2>SMART AI</h2>
+
+<span>Study Planner</span>
+
+</div>
+
+
+</div>
+
+
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#features">Features</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+
+<a href="login.html" class="login">
+Login
+</a>
+
+
+<a href="register.html" class="register">
+Get Started 🚀
+</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+<!-- HERO SECTION -->
+
+
+<section class="hero" id="home">
+
+
+<div class="hero-content">
+
+
+<h1>
+
+Study Smarter With
+
+<span>
+AI Powered Planner
+</span>
+
+🤖
+
+</h1>
+
+
+
+<p>
+
+Organize your study schedule, track progress,
+create smart plans and achieve your goals with
+your personal AI study assistant.
+
+</p>
+
+
+
+<div class="hero-buttons">
+
+
+<a href="register.html" class="primary-btn">
+Start Learning 🚀
+</a>
+
+
+<a href="login.html" class="secondary-btn">
+Student Login
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="stats">
+
+
+<div>
+
+<h2>10K+</h2>
+
+<p>Students</p>
+
+</div>
+
+
+<div>
+
+<h2>95%</h2>
+
+<p>Success Rate</p>
+
+</div>
+
+
+<div>
+
+<h2>24/7</h2>
+
+<p>AI Support</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="hero-image">
+
+
+<div class="ai-card">
+
+
+<i class="fa-solid fa-robot"></i>
+
+
+<h2>
+AI Study Assistant
+</h2>
+
+
+<p>
+Your smart partner for better learning
+</p>
+
+
+
+<div class="floating">
+📚 Smart Notes
+</div>
+
+
+<div class="floating second">
+⏰ Time Management
+</div>
+
+
+<div class="floating third">
+📊 Progress Tracking
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- FEATURES -->
+
+
+<section class="features" id="features">
+
+
+<h1>
+Powerful Features
+</h1>
+
+
+
+<div class="feature-box">
+
+
+
+<div>
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3>
+Smart Planner
+</h3>
+
+<p>
+Create daily and weekly study schedules.
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>
+Progress Tracking
+</h3>
+
+<p>
+Monitor your learning performance.
+</p>
+
+</div>
+
+
+
+
+
+<div>
+
+<i class="fa-solid fa-robot"></i>
+
+<h3>
+AI Suggestions
+</h3>
+
+<p>
+Get personalized study recommendations.
+</p>
+
+</div>
+
+
+
+
+
+<div>
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>
+Pomodoro Timer
+</h3>
+
+<p>
+Improve focus and productivity.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section class="about" id="about">
+
+
+<h1>
+Why Choose Smart AI Planner?
+</h1>
+
+
+<p>
+
+Smart AI Study Planner helps students manage time,
+plan subjects, maintain consistency and improve
+academic performance using artificial intelligence.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- TRUST SECTION -->
+
+
+<section class="trust-section">
+
+
+
+<div class="trust-card">
+
+
+<i class="fa-solid fa-user-graduate"></i>
+
+
+<h3>
+Student Friendly
+</h3>
+
+
+<p>
+Designed specially for students to manage learning easily.
+</p>
+
+
+</div>
+
+
+
+
+<div class="trust-card">
+
+
+<i class="fa-solid fa-brain"></i>
+
+
+<h3>
+AI Powered
+</h3>
+
+
+<p>
+Smart recommendations based on your learning progress.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="trust-card">
+
+
+<i class="fa-solid fa-shield-halved"></i>
+
+
+<h3>
+Secure Profile
+</h3>
+
+
+<p>
+Every student gets a private personalized dashboard.
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section class="contact" id="contact">
+
+
+<h1>
+Start Your Smart Learning Journey Today 🎓
+</h1>
+
+
+<p>
+Create your free student account and unlock AI powered learning.
+</p>
+
+
+<a href="register.html">
+Create Account 🚀
+</a>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+<p>
+
+© 2026 Smart AI Study Planner
+
+<br>
+
+All Rights Reserved | Developed By
+
+<strong>
+PC Creation
+</strong>
+
+
+</p>
+
+
+</footer>
+
+
+
+
+
 </body>
+
 
 </html>

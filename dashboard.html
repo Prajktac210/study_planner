@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart AI Study Planner</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<link rel="stylesheet" href="./css/dashboard.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="logo">
+
+<div class="logo-icon">
+
+<i class="fa-solid fa-brain"></i>
+
+</div>
+
+
+<div>
+
+<h2>SMART AI</h2>
+
+<span>Study Planner</span>
+
+</div>
+
+</div>
+
+
+
+
+<ul class="menu">
+
+
+<li class="active">
+<a href="#">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</a>
+</li>
+
+
+<li>
+<a href="#">
+<i class="fa-regular fa-calendar-check"></i>
+Planner
+</a>
+</li>
+
+
+<li>
+<a href="#">
+<i class="fa-solid fa-book"></i>
+Notes
+</a>
+</li>
+
+
+<li>
+<a href="#">
+<i class="fa-solid fa-clock"></i>
+Pomodoro
+</a>
+</li>
+
+
+<li>
+<a href="#">
+<i class="fa-solid fa-chart-simple"></i>
+Progress
+</a>
+</li>
+
+
+<li>
+<a href="#">
+<i class="fa-solid fa-robot"></i>
+AI Assistant
+</a>
+</li>
+
+
+
+</ul>
+
+
+
+
+<div class="sidebar-card">
+
+<p>
+Small steps every day lead to big results.
+</p>
+
+</div>
+
+
+
+</aside>
+
+
+
+
+
+<!-- MAIN CONTENT -->
+
+
+<main class="main">
+
+
+
+<header class="topbar">
+
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input placeholder="Search for anything">
+
+</div>
+
+
+
+
+<div class="profile">
+
+
+
+<span id="profileName">
+Student
+</span>
+
+
+<button id="logoutBtn">
+Logout
+</button>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+
+<h1>
+
+Good Morning,
+
+<span id="studentName">
+Student
+</span>
+
+👋
+
+</h1>
+
+
+
+<p>
+Let's make today productive and amazing!
+</p>
+
+
+</div>
+
+
+
+<div class="streak-banner">
+
+
+🔥
+
+<div>
+
+<h2>
+28 Days
+</h2>
+
+
+<span>
+Study Streak
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="cards">
+
+
+
+<div class="card blue">
+
+
+<div class="icon">
+📘
+</div>
+
+
+<div>
+
+<h4>
+Study Hours
+</h4>
+
+
+<h2 id="studyHours">
+0 hrs
+</h2>
+
+
+<p>
+Daily Target
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="card green">
+
+
+<div class="icon">
+🎯
+</div>
+
+
+<div>
+
+<h4>
+Course
+</h4>
+
+
+<h2 id="course">
+-
+</h2>
+
+
+<p>
+Student Course
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card purple">
+
+
+<div class="icon">
+🧠
+</div>
+
+
+<div>
+
+<h4>
+AI Focus
+</h4>
+
+
+<h2 id="aiSubject">
+Loading
+</h2>
+
+
+<p>
+AI Recommendation
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="card orange">
+
+
+<div class="icon">
+🔥
+</div>
+
+
+<div>
+
+<h4>
+Goal
+</h4>
+
+
+<h2 id="goal">
+-
+</h2>
+
+
+<p>
+Study Goal
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="dashboard-grid">
+
+
+
+
+
+<div class="left-section">
+
+
+
+<div class="panel">
+
+
+<div class="panel-header">
+
+
+<h3>
+
+<i class="fa-regular fa-calendar-check"></i>
+
+Today's Plan
+
+</h3>
+
+
+</div>
+
+
+
+
+
+<div class="plan-card">
+
+
+<label>
+
+<input type="checkbox">
+
+HTML Basics
+
+</label>
+
+
+<label>
+
+<input type="checkbox">
+
+CSS Design
+
+</label>
+
+
+
+<label>
+
+<input type="checkbox">
+
+JavaScript
+
+</label>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+👤 Student Profile
+</h3>
+
+
+
+<p>
+Name :
+<span id="name"></span>
+</p>
+
+
+<p>
+Course :
+<span id="profileCourse"></span>
+</p>
+
+
+
+<p>
+Year :
+<span id="year"></span>
+</p>
+
+
+
+<p>
+Subjects :
+<span id="subjects"></span>
+</p>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="right-section">
+
+
+
+
+
+<div class="panel ai-card">
+
+
+<h3>
+🤖 AI Study Suggestion
+</h3>
+
+
+
+<h2 id="suggestionTitle">
+Loading...
+</h2>
+
+
+
+<p id="aiMessage">
+Generating AI recommendation...
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+🏆 Achievements
+</h3>
+
+
+<p>
+⭐ First Task Completed
+</p>
+
+
+<p>
+🔥 Study Streak
+</p>
+
+
+<p>
+📚 Notes Created
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+</div>
+
+
+
+
+
+<script type="module" src="./js/dashboard.js"></script>
+
+
+</body>
+
+</html>
