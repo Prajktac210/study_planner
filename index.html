@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart AI Study Planner</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= Sidebar ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+
+            <div>
+                <h2>SMART AI</h2>
+                <span>Study Planner</span>
+            </div>
+
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    Planner
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-book"></i>
+                    Notes
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Calendar
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-clock"></i>
+                    Pomodoro
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    Progress
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-robot"></i>
+                    AI Assistant
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="dark-mode">
+
+            <div>
+                <i class="fa-solid fa-moon"></i>
+                Dark Mode
+            </div>
+
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+
+        </div>
+
+        <div class="sidebar-card">
+
+            <img src="images/study.png" alt="Study">
+
+            <p>
+                Small steps every day lead to big results.
+            </p>
+
+        </div>
+
+    </aside>
+
+    <!-- ================= Main Content ================= -->
+
+    <main class="main">
+
+        <!-- Navbar -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text"
+                    placeholder="Search for anything...">
+
+            </div>
+
+            <div class="top-right">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <div class="profile">
+
+                    <img src="images/avatar.png" alt="">
+
+                    <span>Prajkta</span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Greeting -->
+
+        <section class="hero">
+
+            <div>
+
+                <h1>
+                    Good Morning,
+                    <span>Prajkta!</span>
+                    👋
+                </h1>
+
+                <p>
+                    Let's make today productive and amazing!
+                </p>
+
+            </div>
+
+            <div class="streak-banner">
+
+                <div class="fire">
+
+                    🔥
+
+                </div>
+
+                <div>
+
+                    <h2>28 Days</h2>
+
+                    <span>Study Streak</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Stats Cards -->
+
+        <section class="cards">
+
+            <div class="card blue">
+
+                <div class="icon">
+                    📘
+                </div>
+
+                <div>
+
+                    <h4>Study Hours</h4>
+
+                    <h2>5.2 hrs</h2>
+
+                    <p>↑ 18% from yesterday</p>
+
+                </div>
+
+            </div>
+
+            <div class="card green">
+
+                <div class="icon">
+                    ✅
+                </div>
+
+                <div>
+
+                    <h4>Tasks Completed</h4>
+
+                    <h2>12 Tasks</h2>
+
+                    <p>↑ 20% from yesterday</p>
+
+                </div>
+
+            </div>
+
+            <div class="card purple">
+
+                <div class="icon">
+                    🧠
+                </div>
+
+                <div>
+
+                    <h4>Focus Score</h4>
+
+                    <h2>92%</h2>
+
+                    <p>↑ 15% from yesterday</p>
+
+                </div>
+
+            </div>
+
+            <div class="card orange">
+
+                <div class="icon">
+                    🔥
+                </div>
+
+                <div>
+
+                    <h4>Study Streak</h4>
+
+                    <h2>28 Days</h2>
+
+                    <p>Amazing! Keep it up 🔥</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+                <!-- ================= Main Dashboard ================= -->
+
+        <section class="dashboard-grid">
+
+            <!-- ================= Left Section ================= -->
+
+            <div class="left-section">
+
+                <!-- Today's Plan -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            <i class="fa-regular fa-calendar-check"></i>
+                            Today's Plan
+                        </h3>
+
+                        <span>30 July, 2025</span>
+
+                    </div>
+
+                    <div class="plan-grid">
+
+                        <!-- Morning -->
+
+                        <div class="plan-card morning">
+
+                            <h4>☀ Morning</h4>
+
+                            <label>
+                                <input type="checkbox" checked>
+                                HTML Basics
+                            </label>
+
+                            <label>
+                                <input type="checkbox" checked>
+                                CSS Styling
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                JavaScript Intro
+                            </label>
+
+                            <button>+ Add Task</button>
+
+                        </div>
+
+                        <!-- Afternoon -->
+
+                        <div class="plan-card afternoon">
+
+                            <h4>🌞 Afternoon</h4>
+
+                            <label>
+                                <input type="checkbox">
+                                React Basics
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                Component Practice
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                Firebase Setup
+                            </label>
+
+                            <button>+ Add Task</button>
+
+                        </div>
+
+                        <!-- Night -->
+
+                        <div class="plan-card night">
+
+                            <h4>🌙 Night</h4>
+
+                            <label>
+                                <input type="checkbox">
+                                Revise Topics
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                Make Notes
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                Read Documentation
+                            </label>
+
+                            <button>+ Add Task</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Calendar -->
+
+                <div class="panel calendar-panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            <i class="fa-regular fa-calendar"></i>
+                            Calendar
+                        </h3>
+
+                        <span>July 2025</span>
+
+                    </div>
+
+                    <table class="calendar">
+
+                        <thead>
+
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                            </tr>
+
+                            <tr>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                            </tr>
+
+                            <tr>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                            </tr>
+
+                            <tr>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+
+                                <td class="active-day">
+                                    30
+                                </td>
+
+                                <td>31</td>
+
+                                <td></td>
+
+                                <td></td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- Progress -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            <i class="fa-solid fa-chart-line"></i>
+                            Progress Overview
+                        </h3>
+
+                        <select>
+
+                            <option>This Week</option>
+
+                            <option>This Month</option>
+
+                        </select>
+
+                    </div>
+
+                    <canvas id="progressChart"></canvas>
+
+                </div>
+
+            </div>
+
+            <!-- ================= Right Section ================= -->
+
+            <div class="right-section">
+
+                <!-- Quick Notes -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            <i class="fa-solid fa-note-sticky"></i>
+                            Quick Notes
+                        </h3>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                    <div class="note yellow">
+                        Learn Flexbox in CSS
+                    </div>
+
+                    <div class="note blue">
+                        Finish React Project
+                    </div>
+
+                    <div class="note green">
+                        Firebase Authentication
+                    </div>
+
+                    <div class="note pink">
+                        Read JavaScript Docs
+                    </div>
+
+                </div>
+
+                            <!-- ================= Pomodoro Timer ================= -->
+
+                <div class="panel timer-panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            <i class="fa-solid fa-clock"></i>
+                            Pomodoro Timer
+                        </h3>
+
+                        <i class="fa-solid fa-ellipsis"></i>
+
+                    </div>
+
+                    <div class="timer-tabs">
+
+                        <button class="active">Focus</button>
+                        <button>Break</button>
+
+                    </div>
+
+                    <div class="timer-circle">
+
+                        <div class="circle">
+
+                            <h1 id="timer">25:00</h1>
+
+                            <p>Focus Time 🍅</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="timer-buttons">
+
+                        <button id="startBtn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                        <button id="resetBtn">
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= AI Suggestion ================= -->
+
+                <div class="panel ai-card">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            <i class="fa-solid fa-robot"></i>
+                            AI Study Suggestion
+                        </h3>
+
+                    </div>
+
+                    <div class="robot">
+
+                        🤖
+
+                    </div>
+
+                    <h2>JavaScript</h2>
+
+                    <p>
+
+                        Today you should focus on JavaScript because
+                        you completed HTML yesterday.
+
+                    </p>
+
+                    <button>
+
+                        Why this suggestion?
+
+                    </button>
+
+                </div>
+
+                <!-- ================= Achievements ================= -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+
+                            🏆 Achievements
+
+                        </h3>
+
+                        <a href="#">View All</a>
+
+                    </div>
+
+                    <div class="achievement-grid">
+
+                        <div class="achievement">
+
+                            ⭐
+
+                            <h4>First Steps</h4>
+
+                            <p>Complete your first task</p>
+
+                        </div>
+
+                        <div class="achievement">
+
+                            🔥
+
+                            <h4>7 Day Streak</h4>
+
+                            <p>Study 7 days in a row</p>
+
+                        </div>
+
+                        <div class="achievement">
+
+                            💎
+
+                            <h4>30 Day Streak</h4>
+
+                            <p>Study 30 days in a row</p>
+
+                        </div>
+
+                        <div class="achievement">
+
+                            📚
+
+                            <h4>Note Master</h4>
+
+                            <p>Create 100 Notes</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>
