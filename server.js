@@ -6,26 +6,37 @@ import { GoogleGenAI } from "@google/genai";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
-// Gemini Client
+const PORT = process.env.PORT || 3000;
+const API_KEY = process.env.GEMINI_API_KEY;
+
+// Change this to the model available for your account
+const MODEL_NAME = "gemini-3.5-flash";
+
+if (!API_KEY) {
+    console.error("❌ GEMINI_API_KEY not found in .env");
+    process.exit(1);
+}
+
+console.log("✅ .env loaded");
+console.log("✅ API Key Loaded");
+
 const ai = new GoogleGenAI({
-    apiKey: process.env.GEMINI_API_KEY
+    apiKey: API_KEY
 });
 
-// Health Check
+// Health Route
 app.get("/", (req, res) => {
     res.json({
         success: true,
-        message: "Smart AI Study Planner Backend is Running 🚀"
+        message: "Smart AI Study Planner Backend Running 🚀"
     });
 });
 
-// Chat API
+// Chat Route
 app.post("/chat", async (req, res) => {
 
     try {
@@ -34,27 +45,44 @@ app.post("/chat", async (req, res) => {
 
         if (!message) {
             return res.status(400).json({
-                error: "Message is required"
+                success: false,
+                reply: "Message is required."
             });
         }
 
         const result = await ai.models.generateContent({
-            model: "gemini-2.5-flash",
-            contents: message
+            model: MODEL_NAME,
+            contents: [
+                {
+                    role: "user",
+                    parts: [
+                        {
+                            text: message
+                        }
+                    ]
+                }
+            ]
         });
+
+        const reply =
+            result?.candidates?.[0]?.content?.parts?.[0]?.text ||
+            result?.text ||
+            "No response generated.";
 
         res.json({
             success: true,
-            reply: result.text
+            reply
         });
 
     } catch (error) {
 
+        console.error("========== GEMINI ERROR ==========");
         console.error(error);
+        console.error("=================================");
 
         res.status(500).json({
             success: false,
-            reply: "Unable to connect to Gemini API."
+            reply: error.message || "Unable to connect to Gemini API."
         });
 
     }
@@ -62,5 +90,5 @@ app.post("/chat", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`✅ Server running at http://localhost:${PORT}`);
+    console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
